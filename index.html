@@ -1,0 +1,1748 @@
+
+
+<!DOCTYPE html>
+	<html>
+	<head>
+	  <title>
+			
+			GOOD SAMARITAN
+			
+		</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="/static/gsl/img/favicon.ico">
+		<link rel="stylesheet" href="/static/gsl/css/bootstrap3.min.css">
+		<!-- <link rel="stylesheet" href="../static/css/fontawesome4.css"  > -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	 <link rel="stylesheet" type="text/css" href="/static/gsl/css/style1.css">
+
+
+	 <script type="text/javascript" src="/static/gsl/js/jquery3.min.js"></script>
+
+	 <link rel="stylesheet" href="/static/gsl/css/button.css">
+
+	 <style>
+	   .slText h1{
+	     text-shadow:3px 4px 5px black;
+	     font-size:59px;
+
+
+		 }
+
+		 #line-break{
+			 display:none;
+		 }
+				 .padding{
+				   padding-top:1em;
+
+				 }
+				   .button--isi {
+				     background:   #0D7798;
+				     border-radius: 2em;
+				 }
+				 .row h1{
+				   text-align:left;
+				   padding:0;
+				 }
+
+
+				 .notifications {
+				   position: fixed;
+				   right: 10px;
+				   top: 10px;
+				   width: 350px;
+				   z-index: 1;
+				 }
+				 .notification p {
+				   margin-right: 20px;
+				 }
+				 nav b{
+				   font-size:21px!important;
+				 }
+				 #mobile-view-story{
+					display:none;
+			}
+				 @media screen and (max-width:500px) {
+				   .ctrlNext{
+				     right:10px;
+				   }
+				   slText h1{
+
+				     font-size:39px;}
+
+				   .ctrlPrev{
+				     left:10px;
+				   }
+
+				 }
+				 #pledge p.lead{
+				   text-align:justify;font-size:1.1em;
+				   display:flex;
+				   align-items:center;
+				 }
+				 .vertical-line{
+				   border-right:1px solid #eeeeee;
+				 }
+				 .float-right{
+				   float:right;
+				 }
+				 hr {
+
+			    border: 1px solid #eeeeee;
+			}
+			#home {
+				height:55%;
+			}
+
+	 </style>
+<!-- navbar font size -->
+<style media="screen">
+svg:not(:root) {
+    vertical-align: bottom;
+}
+
+ .modal label{
+	 min-width: 260px;
+ }
+
+</style>
+
+	 <link rel="stylesheet" href="/static/gsl/css/jquery-ui.min.css">
+	 <!-- notification style below -->
+    <style media="screen">
+      #content { padding: 20px; }
+			.notifyjs-corner{
+				left:50%!important;
+				transform: translateX(-50%)!important;
+			}
+      .ui-notification-container {
+        width: 300px;
+        position: absolute;
+        top: 5rem;
+        left :50%;
+        transform: translateX(-50%);
+				z-index:1000;
+      }
+
+      .ui-notification {
+        padding: 5px 10px;
+        -o-box-shadow: 2px 2px 2px #ccc;
+        -moz-box-shadow: 2px 2px 2px #ccc;
+        -webkit-box-shadow: 2px 2px 2px #ccc;
+        box-shadow: 2px 2px 2px #ccc;
+      }
+
+      .ui-notification .ui-notification-content {
+        font-size: 0.9em;
+      }
+
+      .ui-notification .ui-notification-content h4 {
+        font-size: 1.1em;
+      }
+
+      .ui-notification .ui-notification-content p {
+        font-size: 0.9em;
+      }
+
+      .ui-notification .ui-notification-close {
+        display: inline-block;
+        float: right;
+        width: 19px;
+        padding: 1px;
+        height: 18px;
+        margin: -2px -2px 0 2px;
+      }
+
+      .ui-notification .ui-notification-close:hover,
+      .ui-notification .ui-notification-close:focus {
+        padding: 0;
+      }
+
+      .ui-notification .ui-notification-close span {
+        display: block;
+        margin: 1px;
+      }
+    </style>
+    <!-- ends -->
+		<!-- loader css -->
+    <style media="screen">
+      #ajaxContainer {
+        background: rgba(0, 0, 0, .7);
+        display: block;
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10000;
+        color: white;
+      }
+      .loaderdiv {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: inline-block;
+      }
+    </style>
+    <!-- ends -->
+	 <!-- form input ,p,image ,row css -->
+	 <style rel="stylesheet">
+			 p.lead{
+				 text-align: justify;
+			 }
+			 footer{
+				 margin-top:3em;
+			 }
+			 .form-control{
+				 font-weight: normal;
+			 }
+			 .modal input.form-control,textarea.form-control{
+		     width:100%;
+
+		   }
+			 .modal label input.form-control{
+				 width:100%;
+				 font-size: 12.5px;
+			 }
+			 @media screen and (max-width:500px){
+
+
+				 .nav.navbar-bav{
+					 margin-top: 1em;
+					 display: inline-block;
+				 }
+				 .collapse li{
+					 margin:5px 0;
+				 }
+				 nav .collapse{
+					 position: relative;
+					 top:2em;
+				 }
+			 }
+			 .row h1{
+				 font-size: 2em;
+				 font-weight: 800;
+				 line-height: 1em;
+				 font-family: 'Roboto Slab',sans-serif;
+				 margin-bottom: 1em;
+			 }
+
+
+			 img.img-responsive{
+				 box-shadow: 0 2px 30px 20px gray;
+			 }
+			 	.form-control input, .form-control textarea{
+					border:none;
+					border-radius:0;
+					border-bottom:4px solid #23415C;
+				}
+				.form-control input, .form-control textarea:focus{
+					background:grey;
+
+				}
+		</style>
+			 <!-- ends -->
+			 <!-- modal start -->
+			 <!-- modal -->
+	<style media="screen">
+			 .modal{
+				 overflow: scroll;
+			 }
+			 .modal-header{
+				 background-color: #337ab7;
+				 color: white;
+				 border-top-left-radius: 4px;
+				 border-top-right-radius: 4px;
+			 }
+			 	.modal-title{
+					display: inline-block!important;
+				}
+				.fa{
+					padding: 0;
+					font-size: 16px;
+					transition: .5s;
+				}
+				.gold{
+					color:gold;
+				}
+				#navbar-collapse-main.show{
+					border: none;
+					border-bottom:1.5px solid white;
+					transition: .5s;
+				}
+				#navbar-collapse-main{
+					background-color: #23415C;
+					transition: .5s ;
+				}
+				.navbar-toggle{
+					z-index:1000;
+					margin:0;
+					width:auto;
+				}
+
+	 </style>
+	 <!-- ends -->
+	 <!-- landing page button css -->
+	 <style media="screen">
+	 	.slider .button.button--winona {
+		  color:white!important;
+		}
+
+	 </style>
+	 <!-- dropdown list -->
+
+
+	<style media="screen">
+	 	ul.dropdown{
+			position: absolute;
+			background: #4267B2;
+			box-shadow: 0px 2px 5px black;
+			min-width: 150px;
+			list-style: none;
+			margin-top: 10px;
+			z-index:100;
+			padding: 0;
+			transition: .4s;
+		}
+		/* ul.dropdown::before{
+
+			width: 0;
+			 height: 0;
+			 border-left: 5px solid transparent;
+			 border-right:5px solid transparent;
+
+			 	border-bottom: 10px solid #4267B2;
+			 	content: '';
+				display: block;
+				position: absolute;
+				top: -10px;
+
+		} */
+		ul.dropdown li a{
+			padding: 0!important;
+		}
+		ul.dropdown li a:hover{
+			text-decoration: none;
+		}
+		ul.dropdown li{
+			padding:1em;
+		}
+		@media screen and (max-width:500px){
+			ul.dropdown li{
+				padding:.5em 1em;
+
+			}
+			ul.dropdown{
+				min-width: 90vw;
+			}
+			.slText{
+				left:25%!important;
+			}
+		}
+	 </style>
+	 <!-- ends -->
+	 <!-- cursor on hover over tabs -->
+	 <style media="screen">
+	 	nav li a:hover{
+			cursor:pointer!important;
+		}
+	 </style>
+	 <style media="screen">
+	 	/* query button */
+.register-float:hover{
+	cursor:pointer;
+}
+@media screen and (max-width:600px) {
+  .register-float{
+      padding: 7em!important;
+  }
+	.register-float .span1{
+		font-size: 14px!important;
+		transform: translate(10%,-130%)!important;
+	}
+	.register-float .span2{
+		font-size: 14px!important;
+		transform: translate(-70%,-125%)!important;
+	}
+  }
+/* glow */
+.glow{ box-shadow: 0 0 17px #4267B2;
+        }
+#mustVideoModal .framer{
+	width:250px;
+}
+@media (min-width: 768px){
+.navbar-right {
+		float: left!important;
+    position: relative;
+		left:50%;
+    transform: translateX(-50%);
+}
+.navbar-nav > li {
+    height:40px;
+		display: flex;
+		align-items:center;
+}
+}
+
+
+h1,h2,h3,h4,a,p,b{
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p{
+ font-size:1.2em;
+ line-height:1.8;
+ text-align:justify;
+}
+
+.nav-active{
+	background: #071D24;
+}
+/* fall-celing */
+.dropdown-container{
+  background:#FAFAFA;
+	margin-bottom: 4em;
+  width:100%;
+  height:340px;
+  position:relative;
+  top:50px;
+  display:block;
+  transition:all 1s ease-in-out;
+}
+.hide{
+  display:none;
+}
+.close{
+  color: black;
+  opacity:.6;
+    position: relative;
+    right: 1em;
+    bottom: 1.2em;
+    font-size: 30px;
+}
+.col-lg-12 .square:hover{
+	cursor:pointer;
+}
+.square{
+	height:auto;
+	display:inline-flex;
+	background-image:url('/static/gsl/img/pledge/adult-businessman-buy-327540.png');
+	justify-content:center;
+	align-items:center;
+	color:white;
+	text-shadow:2px 2px 4px black;
+	background-repeat: no-repeat;
+	width:100%;
+	opacity:0.5;
+	font-size:2em;
+}
+
+.dark-bg{
+	opacity:1;
+}
+
+.square.inner-square{
+	width: 100%;
+	height: 200px;
+	opacity:.7;
+	background-position: center;
+}
+.square.inner-square:hover{
+	opacity:1;
+}
+.dropdown-container.story,
+.dropdown-container.resources{
+	padding-top: 2em;
+	height:260px;
+}
+.dropdown-container .col-lg-6 a{
+	color: white;
+}
+
+.dropdown-container .col-lg-6 a:hover{
+	text-decoration: none;
+
+}
+
+/* Media Queries */
+
+/*Mobile View */
+
+@media screen and (min-width:319px) and (max-width:500px){
+	.navbar .container-fluid{
+		padding-left: 2px;
+	}
+
+	.nav{
+		background:#23415c;
+	}
+
+	.nav li{
+		position:relative;
+	}
+
+	ul.dropdown{
+		position: relative;
+		background:#23416c;
+	}
+	.navbar .container-fluid .navbar-toggle{
+		margin-right: 25px;
+		margin-top:3px;
+	}
+	.collapse .nav li{
+		margin-left:5px;
+	}
+		.collapse .nav .nav-active a{
+			margin-right:200px;
+		}
+		.home-in-nav{
+			margin-right: 100px;
+		}
+	#desktop-view-story{
+		display: none;
+	}
+
+	#mobile-view-story{
+		display: inline-block;order: 0 1;
+	}
+	#line-break{
+		display:block;
+	}
+}
+
+@media screen and (min-width:1300px){
+	.square{
+		background-size: cover;
+	}
+}
+	 </style>
+	
+<link rel="stylesheet" href="/static/gsl/css/slider.css">
+<style media="screen">
+
+    .col-lg-2 img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+  }
+
+  .img-contain img{
+    width:50px;
+    height:fit-content;
+    /*margin-left: 22em;*/
+  }
+  .img-contain{
+    float:left;
+    padding-right:1em;
+  }
+  @media screen and (max-width:1199px){
+    .col-lg-2 img{
+      width: 30%;
+      height: 30%;
+      object-fit: contain;
+      overflow: hidden;
+  }
+  .img-contain img{
+    margin-left: auto;}
+}
+
+  @media screen and (max-width:500px) and (min-width:319px){
+    .slText h1{
+      font-size:1.75em;
+
+    }
+
+    .slText{
+      padding: 30px 110px;
+      text-align:left;
+
+    }
+
+    .col-lg-2 img{
+      max-width:200px;
+      max-height:200px;
+    }
+
+    .col-lg-10 a button,.col-lg-12 a button{
+      margin-left: auto;
+    }
+
+    p.lead{
+      display:block;
+    }
+
+    .img-contain img{
+      margin-left: auto;
+    }
+
+  }
+  #pledge .col-md-2 p.lead {
+    justify-content:center;
+  }
+
+</style>
+
+
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+			   <div class="navbar-head">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+					 <span class="sr-only">Toggle navigation</span>
+					 <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					   <span class="icon-bar"></span>
+					   </button>
+					   <a class="navbar-brand" href="/home/"><img src="/static/gsl/img/morth.png" style="padding-top: 4px"></a>
+			   </div>
+			   <div class="collapse navbar-collapse" id="navbar-collapse-main">
+					 <ul class="nav navbar-nav navbar-right">
+
+						 
+
+						 <li
+						 
+						 class="nav"
+						 >
+							 <a href="/home/" style="font-family:'Roboto Slab',sans-serif;padding-bottom:5px;"><b>Home</b></a></li>
+
+				 <li
+				 
+				 class="nav"
+				 
+				 ><a href="/benefits/" style="font-family:'Roboto Slab',sans-serif;padding-bottom:5px;"><b>Benefits</b></a></li>
+				 <!-- <li><a data-toggle="modal" data-target="#pledgemodal" style="font-family:'Roboto Slab',sans-serif"><b>Take Pledge</b></a></li> -->
+
+				 <li
+				 
+				 class="nav"
+				 
+				 ><a href="/pledge/" style="font-family:'Roboto Slab',sans-serif"><b>Take Pledge</b></a></li>
+				 
+			   <!-- <li><a data-toggle="modal" data-target="#helpmodal" style="font-family:'Roboto Slab',sans-serif"><b>Grievance </b></a></li> -->
+			   <li id="desktop-view-story"><a href=# name="trig" data-target=grievance style="font-family:'Roboto Slab',sans-serif"><b>Grievance </b></a></li>
+
+				 <li 
+				 class="nav"
+				 
+				  id="mobile-view-story"><a href="/grievance/" style="font-family:'Roboto Slab',sans-serif"><b>Grievance </b></a></li>
+					<br id="line-break">
+				 <li id="desktop-view-story">
+					 <a href=# name="trig" data-target=story style="font-family:'Roboto Slab',sans-serif"><b>Story<span class="caret"></span></b>
+					 </a>
+					 <ul class="dropdown hide">
+						 <li 
+						 class="nav"
+						 
+						 ><a href="/addstory/"   style="font-family:'Roboto Slab',sans-serif"><b>Add Story</b></a></li>
+						 <li
+						 
+						 class="nav"
+						 
+						 ><a href="/viewstory/" style="font-family:'Roboto Slab',sans-serif"><b>View Story</b></a></li>
+					 </ul>
+				 </li>
+
+				 <li class="dropdown" id="mobile-view-story">
+
+						<a class="dropdown-toggler" data-toggle="dropdown" data-target= dropdown-menu href="#" style="font-family:'Roboto Slab',sans-serif"><b>Story</b><span class="caret"></span></a>
+					 <ul class="dropdown hide" style="margin-right:100px;">
+						 <li
+						 
+						 class="nav"
+						 
+						 style="padding:3px;">
+									<div class="col-lg-6 ">
+										<a href="/addstory/">
+										<div class="square inner-square" data-toggle="cards" data-target="law"  style="height:0px;">
+											<b>ADD STORY</b>
+										</div>
+										</a>
+									</div>
+						 </li>
+						 <li
+						 
+						 class="nav"
+						 
+						 style="padding:3px;">
+									<div class="col-lg-6">
+										<a href="/viewstory/">
+										<div class="square inner-square" data-toggle="cards" data-target="social" style="height:0px;">
+											<b>VIEW STORY</b>
+										</div>
+										</a>
+									</div>
+
+						 </li>
+
+					 </ul>
+				 </li>
+
+				<br id="line-break">
+			   <li id="desktop-view-story">
+					 		<a href=# name="trig" data-target=resources  style="font-family:'Roboto Slab',sans-serif"><b>Resources<span class="caret"></span></b></a>
+						 <ul class="dropdown hide">
+							 <li 
+							 class="nav"
+							 ><a  href="/tutorial/" style="font-family:'Roboto Slab',sans-serif"><b>Tutorials</b></a></li>
+							 <li 
+							 class="nav"
+							 ><a href="/resources/faq/" style="font-family:'Roboto Slab',sans-serif"><b>FAQs </b></a></li>
+						 </ul>
+
+							 </li>
+
+							 <li class="dropdown" id="mobile-view-story">
+									<a class="dropdown-toggler" data-toggle="dropdown" data-target= dropdown-menu href="#" style="font-family:'Roboto Slab',sans-serif"><b>Resources</b><span class="caret"></span></a>
+								 <ul class="dropdown hide">
+									 <li 
+									 class="nav"
+									  style="padding:3px;">
+												<div class="col-lg-6 ">
+													<a href="/tutorial/">
+													<div class="square inner-square" data-toggle="cards" data-target="law"  style="height:0px;">
+														<b>TUTORIAL</b>
+													</div>
+													</a>
+												</div>
+									 </li>
+									 <li 
+									 class="nav"
+
+									  style="padding:3px;">
+												<div class="col-lg-6">
+													<a href="/resources/faq/">
+													<div class="square inner-square" data-toggle="cards" data-target="social" style="height:0px;">
+														<b>FAQ</b>
+													</div>
+													</a>
+												</div>
+
+									 </li>
+
+								 </ul>
+							 </li>
+
+
+							 
+
+
+	    				  <li><a href="#contactus" style="font-family:'Roboto Slab',sans-serif"><b>Contact</b></a></li>
+								
+							 
+	      </ul>
+			   </div>
+
+		   </div>
+		</nav>
+		
+			<div class="dropdown-container grievance hide">
+				 <div class="container">
+
+				    <div class="col-lg-12">
+				  <p>Faced any misconduct or discrimination while being a "Good Samaritan"? Raise your grievance below.</p>
+				</div>
+				  <form id="helpform" action="/help/" method="post" enctype="multipart/form-data" class="form-group">
+				  <div class="col-lg-6  vertical-line">
+				    <h4><b>Your Details :</b></h4>
+				    <input type="text" name="reporter_name" placeholder="Name" class="form-control" required ><br>
+				    <input type="tel" name="reporter_contact" placeholder="Contact Number" class="form-control" required ><br>
+				    <input type="email" name="email" placeholder="Email ( Optional )" class="form-control" ><br>
+				    <input type="text" name="subject" placeholder="Subject of the Problem" class="form-control"  required ><br>
+				  </div>
+				  <div class="col-lg-6">
+				  <h4><b>Problem Details :</b></h4>
+				  <div class="col-lg-6">
+				    <input type="text" name="area" placeholder="Area" class="form-control autocomplete"  required /><br>
+				    <input type="text" name="city" placeholder="City" class="form-control autocomplete" required />
+				  </div>
+				  <div class="col-lg-6">
+				    <input type="text" name="state" placeholder="State" class="form-control autocomplete" required /><br>
+				    <input type="text" name="police_station" placeholder="Police Station" class="form-control" required />
+				  </div>
+				  <div class="col-lg-12">
+				    <br>
+				  <textarea class="form-control" name="descritption"  rows="4"  required ></textarea>
+				  </div>
+				  </div>
+				  <div class="col-lg-12">
+				  <div class="col-lg-12">
+				    <button form="helpform" type="submit" name="submit" value="get_help_form" class="float-right button button--isi button--text-thick button--text-upper button--size-s"><i class="button__icon icon icon-forward"></i><span><b>Submit Problem</b></span></button>
+				  </div>
+				  </div>
+				 </form>
+
+				</div>
+			  <i name="trig" data-target=grievance class="fa close fa-times-circle float-right"></i>
+			</div>
+			<div class="dropdown-container story hide">
+				 <div class="container">
+				  <div class="col-lg-6  vertical-line">
+						<a href="/addstory/">
+						<div class="square inner-square" data-toggle="cards" data-target="law"  style="background-image:url('/static/gsl/img/view story – 1/caffeine-coffee-cup-891674.png');">
+							<b>ADD STORY</b>
+						</div>
+						</a>
+				  </div>
+				  <div class="col-lg-6">
+						<a href="/viewstory/">
+						<div class="square inner-square" data-toggle="cards" data-target="social" style="background-image:url('/static/gsl/img/view story – 1/document-education-eyeglasses-336407.png');">
+							<b>VIEW STORY</b>
+						</div>
+						</a>
+				  </div>
+				</div>
+			  <i name="trig" data-target=story class="fa close fa-times-circle float-right"></i>
+			</div>
+			<div class="dropdown-container resources hide">
+				 <div class="container">
+				  <div class="col-lg-6  vertical-line">
+						<a href="/tutorial/">
+						<div class="square inner-square" data-toggle="cards" data-target="social" style="background-image:url('/static/gsl/img/resources/Image 1.png');">
+							<b>TUTORIALS</b>
+						</div>
+						</a>
+				  </div>
+					<div class="col-lg-6">
+						<a href="/resources/faq/">
+						<div class="square inner-square" data-toggle="cards" data-target="law"  style="background-image:url('/static/gsl/img/resources/ask-blackboard-356079.png');">
+							<b>FAQS</b>
+						</div>
+						</a>
+				  </div>
+				</div>
+			  <i name="trig" data-target=resources class="fa close fa-times-circle float-right"></i>
+			</div>
+			
+
+<div id="home">
+<div class="landing-text" style="background:url(/static/gsl/img/black-and-white-couple-hands-1004014.jpg);background-size:cover;background-position:center;">
+  <div class="caption">
+    <div class="slText">
+      <h1>Welcome Good Samaritan</h1>
+      <!-- <center><a href="https://www.youtube.com/watch?v=QUemzqTXnB0"><button class="button button--winona button--border-thin button--round-s" data-text="Watch Video"><span>Watch Video</span></button></a></center> -->
+  </div>
+</div>
+</div>
+	<!-- <div class="slider" id="slider">
+              <div class="slItems">
+
+                <div class="slItem" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/gsl/img/goldenhour.png);background-size:100vw 100%">
+                  <div class="landing-text">
+                  <div class="caption">
+                    <div class="slText">
+                      <h1>GOLDEN HOUR</h1>
+                      <center><a href="https://www.youtube.com/watch?v=_RAKfoF2lps"><button class="button button--winona button--border-thin button--round-s" data-text="Watch Video"><span>Watch Video</span></button></a></center>
+                  </div>
+                </div>
+                </div>
+                </div>
+                <div class="slItem" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/gsl/img/goodsam2.png);background-size:100vw 100%">
+                  <div class="landing-text">
+                  <div class="caption">
+                    <div class="slText">
+                      <h1>GOOD SAMARITAN</h1>
+                      <center><a href="https://www.youtube.com/watch?v=QUemzqTXnB0"><button class="button button--winona button--border-thin button--round-s" data-text="Watch Video"><span>Watch Video</span></button></a></center>
+                  </div>
+                </div>
+                </div>
+                </div>
+                <div class="slItem" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/static/gsl/img/goodasam1.png);background-size:100vw 100%">
+                  <div class="landing-text">
+                  <div class="caption">
+                    <div class="slText">
+                      <h1>GOOD SAMARITAN</h1>
+                      <center><a href=" https://www.youtube.com/watch?v=tWGItjnNwMo"><button class="button button--winona button--border-thin button--round-s" data-text="Watch Video"><span>Watch Video</span></button></a></center>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+            </div>
+          </div> -->
+
+	</div>
+	<div class="padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10">
+          <h1 class="">Who is Good Samaritan?</h1>
+						<p class="lead">A Good Samaritan is a person who, in good faith, without expectation of payment or reward and without any duty of care or special relationship, voluntarily comes forward to administer immediate assistance or emergency care to a person injured in an accident, or crash, or emergency medical condition, or emergency situation.
+						</p>
+					</div>
+                  <div class="col-lg-2">
+                    <img src="/static/gsl/img/Index/Asset%201.png" alt="">
+                  </div>
+				</div><hr>
+
+			<div class="row">
+
+        <div class="col-lg-2">
+          <img src="/static/gsl/img/Index/Asset%202.png" alt="">
+        </div>
+				<div class="col-lg-10">
+          <h1 class="">What is Good Samaritan Law?</h1>
+                      <p class="lead">The Good Samaritan Law allows a person, without expectation of payment or reward and without any duty of care or special relationship, voluntarily come forward to administer immediate assistance or emergency care to a person injured in an accident, or crash, or emergency medical condition.
+                        Good Samaritan Law protects Good Samaritans from harassment on the actions being taken by them to save the life of the road accident victims.
+                        <br>
+
+                      </p>
+                      <a href="/static/gsl/doc/gsl.pdf" target="_blank"><button class="button button--isi button--text-thick button--text-upper button--size-s"><i class="button__icon icon icon-forward"></i><span>Know More</span></button></a>
+
+									</div>
+
+				</div><hr>
+
+				<div class="row">
+					<h1 style="margin-left:10px;">Why the need for Good Samaritan law?</h1>
+
+					<div class="col-lg-12">
+
+							<p class="lead">India is an unfortunate victim of a large number of road crash fatalities. Three out of four people in the country are hesitant to help injured accident victims on roads due to fear of police harassment, detention at hospitals, and prolonged legal formalities. Even if someone wants to help, these factors stop them from doing so.
+According to a National Study conducted by the Save LIFE foundation and TNS India Pvt. Ltd.<br></p>
+<p class="lead" style="text-align:left;line-height:2em"><b>1)</b> 74% of bystanders are unlikely to assist victims of road accidents;<br>
+<b>2)</b> 88% of those bystanders gave the following reasons for their reluctance:<br>&nbsp;&nbsp;&nbsp; legal hassles, including repeated police questioning and multiple court appearances;<br>
+<b>3)</b> 77% of the respondents cited detention at hospitals and having to pay hospital registration fees and other charges as reasons not to help.<br></p>
+
+<a href="/static/gsl/doc/whyneed.pdf" target="_blank"><button class="button button--isi button--text-thick button--text-upper button--size-s"><i class="button__icon icon icon-forward"></i><span>Know More</span></button></a>
+
+
+
+										</div>
+
+					</div><hr>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <img src="/static/gsl/img/Index/1200px-Emblem_of_the_Supreme_Court_of_India.svg.png" alt="">
+            </div>
+  					<div class="col-lg-10">
+              <h1 class="">How did India get a Good Samaritan Law?</h1>
+  							<p class="lead">In the last ten years, road crashes have killed over 13 lakh people in India. According to the Law Commission of India, 50% of these victims died of preventable injuries and could have been saved if they had received care on time. The role of the bystander is critical in providing emergency care to the victim. Yet, in India, bystanders have been hesitant to help the injured for fear of legal repercussions and procedural hassles.<br></p>
+                <p class="lead">In 2012, SaveLIFE Foundation had filed a Public Interest Litigation (PIL) in the Supreme Court of India, requesting the Hon'ble court to safeguard Good Samaritans who come forward to help the injured.</p>
+  					</div>
+  					</div><hr>
+					<div class="row">
+						<div class="col-lg-12">
+              <h1 style="text-align:center;"><b>Be a Good Samaritan</b></h1>
+									<div class="col-md-6" id="pledge">
+                    <div class="row">
+                      <div class="col-md-2"><p class="lead"><span class="img-contain"><img src="/static/gsl/img/Index/car-collision.png" alt=""></span></p></div>
+                      <div class="col-md-10"><p class="lead">Road crashes claimed more than 200,000 lives in India alone and contributed to the economic loss of approximately 3% GDP. 17 people die every hour on Indian roads and around 4.07 LAC.</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"><p class="lead"><span class="img-contain"><img src="/static/gsl/img/Index/care.svg" alt=""></span></p></div>
+                        <div class="col-md-10"><p class="lead">As per the reports, nearly 50 per cent of road fatalities would not have happened had medical attention been given within the first hour. Become a GOOD SAMARITAN and help us reduce this number.</p></div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-2"><p class="lead"><span class="img-contain"><img src="/static/gsl/img/Index/medical-kit.png" alt=""></span></p></div>
+                          <div class="col-md-10"><p class="lead">We take this pledge to save someone's life and take it upon as our moral duty being a good citizen.</p></div>
+                        </div>
+											<!--<p class="lead"><span class="img-contain"><img src="/static/gsl/img/Index/car-collision.png" alt=""></span> Road crashes claimed more than 200,000 lives in India alone and contributed to the economic loss of approximately 3% GDP. 17 people die every hour on Indian roads and around 4.07 LAC.
+</p>-->
+<!--<p class="lead">
+<span  class="img-contain"><img  src="/static/gsl/img/Index/care.svg" alt=""></span> As per the reports, nearly 50 per cent of road fatalities would not have happened had medical attention been given within the first hour. Become a GOOD SAMARITAN and help us reduce this number.
+</p>-->
+<!--<p class="lead">
+<span class="img-contain"><img src="/static/gsl/img/Index/medical-kit.png" alt=""></span> We take this pledge to save someone's life and take it upon as our moral duty being a good citizen.
+											</p>-->
+
+									</div>
+                  <div class="col-md-6">
+    								<div class="img-fluid" >
+    									<img id="first" src="/static/gsl/img/cpr.jpg" style="box-shadow:0 2px 5px black;width:85%;height:auto;border-radius: 8px;">
+    								</div>
+    							</div>
+
+											</div><br><br>
+
+						</div>
+
+
+				</div>
+			</div>
+
+<div class="ui-notifiction-container"></div>
+
+
+
+
+
+			<div class="ui-notification-container"></div>
+			<footer  class="container-fluid text-center">
+				<div class="row">
+					<div class="col-sm-4" id="contactus">
+					<h3>Contact Us</h3>
+					<img src="/static/gsl/img/ir.png" class="icon" width="20%">
+					<h5>Indian Road Safety Campaign, Solve</h5>
+					<h5><a href="mailto:info@road-safety.co.in"><svg xmlns="http://www.w3.org/2000/svg" width="16.771" height="12.578" viewBox="0 0 16.771 12.578"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M16.771,71.133a2.078,2.078,0,0,1-.269,1.008l-5.3-5.925,5.238-4.583a2.081,2.081,0,0,1,.326,1.114v8.385ZM8.385,67.292l7.288-6.377a2.07,2.07,0,0,0-1-.264H2.1a2.063,2.063,0,0,0-1,.264Zm2.032-.386L8.73,68.383a.526.526,0,0,1-.69,0L6.353,66.906l-5.362,6a2.071,2.071,0,0,0,1.105.322H14.675a2.071,2.071,0,0,0,1.105-.322ZM.327,61.634A2.081,2.081,0,0,0,0,62.747v8.385a2.071,2.071,0,0,0,.269,1.008l5.295-5.926Z" transform="translate(0 -60.651)"/></svg> info@road-safety.co.in</a></h5>
+
+					<h5><svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.666" viewBox="0 0 17.5 17.666"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M212.553,75a1.553,1.553,0,1,0,1.553,1.553A1.554,1.554,0,0,0,212.553,75Zm0,0" transform="translate(-203.803 -72.412)"/><path class="a" d="M140.14,0a4.141,4.141,0,0,0-3.5,6.346l3.5,5.592,3.5-5.592A4.141,4.141,0,0,0,140.14,0Zm0,6.728a2.588,2.588,0,1,1,2.588-2.588A2.591,2.591,0,0,1,140.14,6.728Zm0,0" transform="translate(-131.39)"/><path class="a" d="M183,424.14h5.036l-.4-3.14h-4.25Zm0,0" transform="translate(-176.765 -406.474)"/><path class="a" d="M197.992,325.938h1.757l-1.466-2.325Zm0,0" transform="translate(-191.232 -312.447)"/><path class="a" d="M332.683,304.105h4.078L335.467,301h-3.182Zm0,0" transform="translate(-320.986 -290.614)"/><path class="a" d="M50,304.105h4.063L54.448,301H51.29Zm0,0" transform="translate(-48.271 -290.614)"/><path class="a" d="M263.094,326.772h1.742l-.294-2.3Zm0,0" transform="translate(-254.111 -313.281)"/><path class="a" d="M5.659,421H1.294L0,424.14H5.271Zm0,0" transform="translate(0 -406.474)"/><path class="a" d="M352.048,421h-4.376l.4,3.14h5.272Zm0,0" transform="translate(-335.842 -406.474)"/></svg> 262, Lane No. 4, Westend Marg, Saket, Delhi - 110030</h5>
+					<a href="http://road-safety.co.in"><svg xmlns="http://www.w3.org/2000/svg" width="18.574" height="18.645" viewBox="0 0 18.574 18.645"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M17.444,4.815l-.089-.154a9.313,9.313,0,0,0-16.136,0l-.089.154A9.255,9.255,0,0,0,0,8.545V10.1a9.251,9.251,0,0,0,1.13,3.73l.089.155a9.313,9.313,0,0,0,16.136,0l.089-.155a9.25,9.25,0,0,0,1.13-3.73V8.545A9.252,9.252,0,0,0,17.444,4.815Zm-3.512,3.73A18.5,18.5,0,0,0,13.7,6.215h2.7a7.7,7.7,0,0,1,.614,2.331ZM9.287,17.091c-.878,0-1.816-1.2-2.43-3.107h4.86c-.614,1.911-1.552,3.107-2.43,3.107ZM6.463,12.43A16.328,16.328,0,0,1,6.2,10.1h6.179a16.329,16.329,0,0,1-.265,2.331ZM6.2,8.545a16.328,16.328,0,0,1,.265-2.331h5.648a16.329,16.329,0,0,1,.265,2.331Zm3.09-6.992c.878,0,1.816,1.2,2.43,3.107H6.857c.613-1.91,1.551-3.107,2.43-3.107Zm6.2,3.107H13.362a10.36,10.36,0,0,0-1.011-2.475,7.807,7.807,0,0,1,3.136,2.475ZM6.223,2.186A10.36,10.36,0,0,0,5.212,4.661H3.087A7.807,7.807,0,0,1,6.223,2.186ZM2.172,6.215h2.7a18.537,18.537,0,0,0-.231,2.331H1.558a7.69,7.69,0,0,1,.614-2.331ZM4.642,10.1a18.466,18.466,0,0,0,.231,2.331h-2.7A7.7,7.7,0,0,1,1.558,10.1ZM3.087,13.983H5.212a10.376,10.376,0,0,0,1.011,2.475,7.808,7.808,0,0,1-3.136-2.475Zm9.263,2.475a10.329,10.329,0,0,0,1.011-2.475h2.125a7.8,7.8,0,0,1-3.136,2.475ZM16.4,12.43H13.7a18.571,18.571,0,0,0,.231-2.331h3.084A7.712,7.712,0,0,1,16.4,12.43Zm0,0" transform="translate(0)"/></svg> http://road-safety.co.in</a>
+
+					<br><br><a href="https://twitter.com/MORTHIndia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><svg xmlns="http://www.w3.org/2000/svg" width="20.58" height="20.58" viewBox="0 0 20.58 20.58"><defs><style>.a{fill:#fff;}</style></defs><g transform="translate(0 0)"><path class="a" d="M10.29,0A10.29,10.29,0,1,0,20.58,10.29,10.3,10.3,0,0,0,10.29,0Zm4.59,7.935c0,.1.007.2.007.308A6.737,6.737,0,0,1,4.518,13.916a4.782,4.782,0,0,0,3.506-.981,2.371,2.371,0,0,1-2.212-1.645,2.378,2.378,0,0,0,1.069-.04,2.369,2.369,0,0,1-1.9-2.322c0-.01,0-.02,0-.03a2.359,2.359,0,0,0,1.072.3,2.372,2.372,0,0,1-.733-3.162A6.725,6.725,0,0,0,10.2,8.508a2.37,2.37,0,0,1,4.036-2.161,4.727,4.727,0,0,0,1.5-.575A2.379,2.379,0,0,1,14.7,7.083a4.709,4.709,0,0,0,1.36-.373A4.764,4.764,0,0,1,14.88,7.935Z"/></g></svg></a>
+
+					<a href="https://www.facebook.com/MoRTHIndia/" ><svg xmlns="http://www.w3.org/2000/svg" width="20.58" height="20.58" viewBox="0 0 20.58 20.58"><defs><style>.a{fill:#fff;}</style></defs><g transform="translate(0 0)"><path class="a" d="M10.29,0A10.29,10.29,0,1,0,20.58,10.29,10.3,10.3,0,0,0,10.29,0Zm2.559,10.652H11.175v5.967H8.694V10.652H7.515V8.543H8.694V7.179a2.326,2.326,0,0,1,2.5-2.5l1.838.007V6.73H11.7a.505.505,0,0,0-.526.574V8.544h1.89Z"/></g></svg></a>
+					<a href="https://www.instagram.com/morthindia/?hl=en" ><svg xmlns="http://www.w3.org/2000/svg" width="20.774" height="20.774" viewBox="0 0 20.774 20.774"><defs><style>.a{fill:#fff;}</style></defs><g transform="translate(0 0)"><path class="a" d="M215.446,211.223A4.223,4.223,0,1,1,211.223,207,4.223,4.223,0,0,1,215.446,211.223Zm0,0" transform="translate(-200.836 -200.836)"/><path class="a" d="M155.748,138.4a4.2,4.2,0,0,0-2.4-2.4,7.009,7.009,0,0,0-2.352-.436c-1.336-.061-1.737-.074-5.12-.074s-3.784.013-5.12.074A7.014,7.014,0,0,0,138.4,136a4.2,4.2,0,0,0-2.4,2.4,7.012,7.012,0,0,0-.436,2.353c-.061,1.336-.074,1.737-.074,5.12s.013,3.784.074,5.12a7.01,7.01,0,0,0,.436,2.352,4.2,4.2,0,0,0,2.4,2.4,7,7,0,0,0,2.353.436c1.336.061,1.736.074,5.119.074s3.784-.013,5.12-.074a7,7,0,0,0,2.353-.436,4.2,4.2,0,0,0,2.4-2.4,7.015,7.015,0,0,0,.436-2.352c.061-1.336.074-1.737.074-5.12s-.013-3.784-.074-5.12A7,7,0,0,0,155.748,138.4Zm-9.877,13.978a6.506,6.506,0,1,1,6.506-6.506A6.506,6.506,0,0,1,145.872,152.381Zm6.763-11.749a1.52,1.52,0,1,1,1.52-1.52A1.52,1.52,0,0,1,152.635,140.633Zm0,0" transform="translate(-135.485 -135.489)"/><path class="a" d="M2.975,0A2.975,2.975,0,1,0,5.95,2.975,2.975,2.975,0,0,0,2.975,0Zm1.7,3.679a1.253,1.253,0,0,1-.079.415.873.873,0,0,1-.5.5,1.254,1.254,0,0,1-.415.079c-.182.008-.24.01-.7.01s-.522,0-.7-.01a1.254,1.254,0,0,1-.415-.079.873.873,0,0,1-.5-.5,1.253,1.253,0,0,1-.079-.415c-.008-.182-.01-.24-.01-.7s0-.522.01-.7a1.253,1.253,0,0,1,.079-.415.874.874,0,0,1,.5-.5,1.254,1.254,0,0,1,.415-.079c.182-.008.24-.01.7-.01s.522,0,.7.01a1.255,1.255,0,0,1,.415.079.874.874,0,0,1,.5.5,1.253,1.253,0,0,1,.079.415c.008.182.01.24.01.7S4.681,3.5,4.673,3.679Zm0,0" transform="translate(7.412 7.412)"/></g></svg></a>
+					</div>
+
+					<div class="col-sm-4"><br>
+					<img src="/static/gsl/img/morth.png" class="icon" width="40%"><br><br>
+					<a href="http://morth-roadsafety.nic.in/"><img src="/static/gsl/img/morthsafety.png" class="icon" width="60%"></a><br><br><br>
+					<a href="http://morth-roadsafety.nic.in/" ><svg xmlns="http://www.w3.org/2000/svg" width="18.574" height="18.645" viewBox="0 0 18.574 18.645"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M17.444,4.815l-.089-.154a9.313,9.313,0,0,0-16.136,0l-.089.154A9.255,9.255,0,0,0,0,8.545V10.1a9.251,9.251,0,0,0,1.13,3.73l.089.155a9.313,9.313,0,0,0,16.136,0l.089-.155a9.25,9.25,0,0,0,1.13-3.73V8.545A9.252,9.252,0,0,0,17.444,4.815Zm-3.512,3.73A18.5,18.5,0,0,0,13.7,6.215h2.7a7.7,7.7,0,0,1,.614,2.331ZM9.287,17.091c-.878,0-1.816-1.2-2.43-3.107h4.86c-.614,1.911-1.552,3.107-2.43,3.107ZM6.463,12.43A16.328,16.328,0,0,1,6.2,10.1h6.179a16.329,16.329,0,0,1-.265,2.331ZM6.2,8.545a16.328,16.328,0,0,1,.265-2.331h5.648a16.329,16.329,0,0,1,.265,2.331Zm3.09-6.992c.878,0,1.816,1.2,2.43,3.107H6.857c.613-1.91,1.551-3.107,2.43-3.107Zm6.2,3.107H13.362a10.36,10.36,0,0,0-1.011-2.475,7.807,7.807,0,0,1,3.136,2.475ZM6.223,2.186A10.36,10.36,0,0,0,5.212,4.661H3.087A7.807,7.807,0,0,1,6.223,2.186ZM2.172,6.215h2.7a18.537,18.537,0,0,0-.231,2.331H1.558a7.69,7.69,0,0,1,.614-2.331ZM4.642,10.1a18.466,18.466,0,0,0,.231,2.331h-2.7A7.7,7.7,0,0,1,1.558,10.1ZM3.087,13.983H5.212a10.376,10.376,0,0,0,1.011,2.475,7.808,7.808,0,0,1-3.136-2.475Zm9.263,2.475a10.329,10.329,0,0,0,1.011-2.475h2.125a7.8,7.8,0,0,1-3.136,2.475ZM16.4,12.43H13.7a18.571,18.571,0,0,0,.231-2.331h3.084A7.712,7.712,0,0,1,16.4,12.43Zm0,0" transform="translate(0)"/></svg> http://morth-roadsafety.nic.in/</a>
+					<br><br><a href="https://twitter.com/MORTHIndia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><svg xmlns="http://www.w3.org/2000/svg" width="20.58" height="20.58" viewBox="0 0 20.58 20.58"><defs><style>.a{fill:#fff;}</style></defs><g transform="translate(0 0)"><path class="a" d="M10.29,0A10.29,10.29,0,1,0,20.58,10.29,10.3,10.3,0,0,0,10.29,0Zm4.59,7.935c0,.1.007.2.007.308A6.737,6.737,0,0,1,4.518,13.916a4.782,4.782,0,0,0,3.506-.981,2.371,2.371,0,0,1-2.212-1.645,2.378,2.378,0,0,0,1.069-.04,2.369,2.369,0,0,1-1.9-2.322c0-.01,0-.02,0-.03a2.359,2.359,0,0,0,1.072.3,2.372,2.372,0,0,1-.733-3.162A6.725,6.725,0,0,0,10.2,8.508a2.37,2.37,0,0,1,4.036-2.161,4.727,4.727,0,0,0,1.5-.575A2.379,2.379,0,0,1,14.7,7.083a4.709,4.709,0,0,0,1.36-.373A4.764,4.764,0,0,1,14.88,7.935Z"/></g></svg></a>
+
+					<a href="https://www.facebook.com/MoRTHIndia/" ><svg xmlns="http://www.w3.org/2000/svg" width="20.58" height="20.58" viewBox="0 0 20.58 20.58"><defs><style>.a{fill:#fff;}</style></defs><g transform="translate(0 0)"><path class="a" d="M10.29,0A10.29,10.29,0,1,0,20.58,10.29,10.3,10.3,0,0,0,10.29,0Zm2.559,10.652H11.175v5.967H8.694V10.652H7.515V8.543H8.694V7.179a2.326,2.326,0,0,1,2.5-2.5l1.838.007V6.73H11.7a.505.505,0,0,0-.526.574V8.544h1.89Z"/></g></svg></a>
+					<a href="https://www.instagram.com/morthindia/?hl=en" ><svg xmlns="http://www.w3.org/2000/svg" width="20.774" height="20.774" viewBox="0 0 20.774 20.774"><defs><style>.a{fill:#fff;}</style></defs><g transform="translate(0 0)"><path class="a" d="M215.446,211.223A4.223,4.223,0,1,1,211.223,207,4.223,4.223,0,0,1,215.446,211.223Zm0,0" transform="translate(-200.836 -200.836)"/><path class="a" d="M155.748,138.4a4.2,4.2,0,0,0-2.4-2.4,7.009,7.009,0,0,0-2.352-.436c-1.336-.061-1.737-.074-5.12-.074s-3.784.013-5.12.074A7.014,7.014,0,0,0,138.4,136a4.2,4.2,0,0,0-2.4,2.4,7.012,7.012,0,0,0-.436,2.353c-.061,1.336-.074,1.737-.074,5.12s.013,3.784.074,5.12a7.01,7.01,0,0,0,.436,2.352,4.2,4.2,0,0,0,2.4,2.4,7,7,0,0,0,2.353.436c1.336.061,1.736.074,5.119.074s3.784-.013,5.12-.074a7,7,0,0,0,2.353-.436,4.2,4.2,0,0,0,2.4-2.4,7.015,7.015,0,0,0,.436-2.352c.061-1.336.074-1.737.074-5.12s-.013-3.784-.074-5.12A7,7,0,0,0,155.748,138.4Zm-9.877,13.978a6.506,6.506,0,1,1,6.506-6.506A6.506,6.506,0,0,1,145.872,152.381Zm6.763-11.749a1.52,1.52,0,1,1,1.52-1.52A1.52,1.52,0,0,1,152.635,140.633Zm0,0" transform="translate(-135.485 -135.489)"/><path class="a" d="M2.975,0A2.975,2.975,0,1,0,5.95,2.975,2.975,2.975,0,0,0,2.975,0Zm1.7,3.679a1.253,1.253,0,0,1-.079.415.873.873,0,0,1-.5.5,1.254,1.254,0,0,1-.415.079c-.182.008-.24.01-.7.01s-.522,0-.7-.01a1.254,1.254,0,0,1-.415-.079.873.873,0,0,1-.5-.5,1.253,1.253,0,0,1-.079-.415c-.008-.182-.01-.24-.01-.7s0-.522.01-.7a1.253,1.253,0,0,1,.079-.415.874.874,0,0,1,.5-.5,1.254,1.254,0,0,1,.415-.079c.182-.008.24-.01.7-.01s.522,0,.7.01a1.255,1.255,0,0,1,.415.079.874.874,0,0,1,.5.5,1.253,1.253,0,0,1,.079.415c.008.182.01.24.01.7S4.681,3.5,4.673,3.679Zm0,0" transform="translate(7.412 7.412)"/></g></svg></a>
+					</div>
+
+
+
+					<div class="col-sm-4" id="missionroadsafety">
+					<h3>Mission Road Safety</h3>
+					<a href="http://www.missionroadsafety.com"><img src="/static/gsl/img/missionroadsafety.png" class="icon" width="60%"></a><br><br><br>
+					<h5>A portal for road accidents data </h5>
+					<a href="http://www.missionroadsafety.com"><svg xmlns="http://www.w3.org/2000/svg" width="18.574" height="18.645" viewBox="0 0 18.574 18.645"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M17.444,4.815l-.089-.154a9.313,9.313,0,0,0-16.136,0l-.089.154A9.255,9.255,0,0,0,0,8.545V10.1a9.251,9.251,0,0,0,1.13,3.73l.089.155a9.313,9.313,0,0,0,16.136,0l.089-.155a9.25,9.25,0,0,0,1.13-3.73V8.545A9.252,9.252,0,0,0,17.444,4.815Zm-3.512,3.73A18.5,18.5,0,0,0,13.7,6.215h2.7a7.7,7.7,0,0,1,.614,2.331ZM9.287,17.091c-.878,0-1.816-1.2-2.43-3.107h4.86c-.614,1.911-1.552,3.107-2.43,3.107ZM6.463,12.43A16.328,16.328,0,0,1,6.2,10.1h6.179a16.329,16.329,0,0,1-.265,2.331ZM6.2,8.545a16.328,16.328,0,0,1,.265-2.331h5.648a16.329,16.329,0,0,1,.265,2.331Zm3.09-6.992c.878,0,1.816,1.2,2.43,3.107H6.857c.613-1.91,1.551-3.107,2.43-3.107Zm6.2,3.107H13.362a10.36,10.36,0,0,0-1.011-2.475,7.807,7.807,0,0,1,3.136,2.475ZM6.223,2.186A10.36,10.36,0,0,0,5.212,4.661H3.087A7.807,7.807,0,0,1,6.223,2.186ZM2.172,6.215h2.7a18.537,18.537,0,0,0-.231,2.331H1.558a7.69,7.69,0,0,1,.614-2.331ZM4.642,10.1a18.466,18.466,0,0,0,.231,2.331h-2.7A7.7,7.7,0,0,1,1.558,10.1ZM3.087,13.983H5.212a10.376,10.376,0,0,0,1.011,2.475,7.808,7.808,0,0,1-3.136-2.475Zm9.263,2.475a10.329,10.329,0,0,0,1.011-2.475h2.125a7.8,7.8,0,0,1-3.136,2.475ZM16.4,12.43H13.7a18.571,18.571,0,0,0,.231-2.331h3.084A7.712,7.712,0,0,1,16.4,12.43Zm0,0" transform="translate(0)"/></svg> www.missionroadsafety.com</a>
+					</div>
+
+			</footer>
+
+			<div id="ajaxContainer" style="display:none;" >
+          <div class="loaderdiv">
+              <div class="loader">
+                  <img style="width:5rem;" src="/static/gsl/img/loading.gif" alt="" />
+                  <br />
+                  <span class="loader-text" style="color:white;">Loading...</span>
+              </div>
+          </div>
+      </div>
+				<!-- add your stories modal -->
+			<div class="modal" id="addstorymodal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Share your stories</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form id="story_submit" method="post" action="/story/" enctype="multipart/form-data" class="form-group" >
+
+								<p class="desc">Want to inspire others with your 'Good Samaritan' story?<br>Share it below.</p>
+								<label for="">Your details:&nbsp;</label><br>
+								<label for="">Name:&nbsp;
+
+								<input type="text" name="name" placeholder="Enter name" class="form-control" required />
+
+								</label>
+								<label for="">City:&nbsp;
+								<input id="autocomplete" onFocus="geolocate()" type="text" name="city" placeholder="city" class="form-control autocomplete" required />
+
+								</label>
+								<label for="">Contact:&nbsp;
+								<input type="text" name="contact" placeholder="contact" class="form-control" required />
+
+							</label><br>
+
+							<hr>
+								<label for="">Details of your story:&nbsp;</label><br>
+								<label for="audiocheck">Audio:&nbsp;<input id="audiocheck" type="checkbox" name="is_audio">&nbsp;<span style="color:#9999A2;font-size:10px;">Max Size Limit:10mb.If it exceeds please add link in description.</span>
+								<input type="file" accept="audio/mp3" name="audio" placeholder="Add an audio" class="form-control hide dz-hidden-input"></label><br>
+
+								<label for="videocheck">Video:&nbsp;<input id="videocheck" type="checkbox" name="is_video">&nbsp;<span style="color:#9999A2;font-size:10px;">Max Size Limit:200mb.If it exceeds please add link in description.</span>
+
+								<input type="file" accept="video/mp4" name="video" placeholder="Add an video" class="form-control hide dz-hidden-input"></label><br>
+								<label for="videocheck">Add descritption of your story:&nbsp;</label>
+								<textarea class="form-control" name="description"  rows="8" cols="15" required ></textarea><br>
+
+							</form>
+
+
+
+						</div>
+						<div class="modal-footer">
+							<button form="story_submit" type="submit" name="submit"  value="story_form" class="btn btn-primary">Save</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- ends -->
+				<!-- viewstorymodal modal -->
+			<div class="modal" id="viewstorymodal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" style="width:95%;" role="document">
+					<div class="modal-content" style="width:inherit;">
+						<div class="modal-header">
+							<h5 class="modal-title">View other's stories</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form id="story_submit" method="post" action="/story/" enctype="multipart/form-data" class="form-group" >
+
+								<p class="desc">Want to inspire others with your 'Good Samaritan' story?<br>Share it below.</p>
+								<label for="">Your details:&nbsp;</label><br>
+								<label for="">Name:&nbsp;
+
+								<input type="text" name="name" placeholder="Enter name" class="form-control" required />
+
+								</label>
+								<label for="">City:&nbsp;
+								<input  type="text" name="city" placeholder="city" class="form-control autocomplete" required />
+
+								</label>
+								<label for="">Contact:&nbsp;
+								<input type="text" name="contact" placeholder="contact" class="form-control" required />
+
+							</label><br>
+
+							<hr>
+								<label for="">Details of your story:&nbsp;</label><br>
+								<label for="audiocheck">Audio:&nbsp;<input id="audiocheck" type="checkbox" name="is_audio">&nbsp;<span style="color:#9999A2;font-size:10px;">Max Size Limit:10mb.If it exceeds please add link in description.</span>
+								<input type="file" accept="audio/x-waw" name="audio" placeholder="Add an audio" class="form-control hide dz-hidden-input"></label><br>
+
+								<label for="videocheck">Video:&nbsp;<input id="videocheck" type="checkbox" name="is_video">&nbsp;<span style="color:#9999A2;font-size:10px;">Max Size Limit:200mb.If it exceeds please add link in description.</span>
+
+								<input type="file" accept="video/x-msvideo" name="video" placeholder="Add an video" class="form-control hide dz-hidden-input"></label><br>
+								<label for="videocheck">Add descritption of your story:&nbsp;</label>
+								<textarea class="form-control" name="descritption"  rows="8" cols="15" required ></textarea><br>
+
+							</form>
+
+
+
+						</div>
+						<div class="modal-footer">
+							<button form="story_submit" type="submit" name="submit"  value="story_form" class="btn btn-primary">Save</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- ends -->
+			<!-- help modal -->
+			<div class="modal" id="helpmodal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Submit Your Grievance</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p class="desc">Faced any misconduct or discrimination while being a "Good Samaritan"?<br>Raise your grievance below.</p>
+							<form id="helpform" action="/help/" method="post" enctype="multipart/form-data" class="form-group">
+
+								<label for="">Your details:</label><br>
+								<input type="text" name="reporter_name" placeholder="Name" class="form-control" required ><br>
+								<input type="tel" name="reporter_contact" placeholder="Contact Number" class="form-control" required ><br>
+								<input type="email" name="email" placeholder="Email ( Optional )" class="form-control" ><br>
+								<input type="text" name="subject" placeholder="Subject of the Problem" class="form-control"  required ><br>
+
+								<hr>
+								<label for="">Problem details:</label><br>
+
+
+								<label for="">Area:&nbsp;<br>
+								<input type="text" name="area" placeholder="Where problem was faced" class="form-control autocomplete"  required />
+								<!-- <select type="text" name="area" placeholder="area" class="form-control"> -->
+									<!-- <option value="lorem">lorem</option>
+									<option value="lorem">lorem</option>
+									<option value="lorem">lorem</option>
+									<option value="lorem">lorem</option>
+								</select>	<br> -->
+								</label>
+								<label for="">City:&nbsp;
+								<input type="text" name="city" placeholder="Of the area" class="form-control autocomplete" required />
+								<!-- <select type="text" name="city" placeholder="city" class="form-control">
+									<option value="lorem">lorem</option>
+									<option value="lorem">lorem</option>
+									<option value="lorem">lorem</option>
+									<option value="lorem">lorem</option>
+								</select>	<br> -->
+								</label>
+								<label for="">State:&nbsp;
+								<input type="text" name="state" placeholder="Of the city" class="form-control autocomplete" required />
+
+								<!-- <select type="text" name="state" placeholder="state" class="form-control"> -->
+									<!-- <option value="lorem">lorem</option>
+									<option value="lorem">lorem</option>
+									<option value="lorem">lorem</option>
+									<option value="lorem">lorem</option>
+								</select>	<br> -->
+								</label>
+								<label for="">Police Station:&nbsp;
+								<input type="text" name="police_station" placeholder="Nearest to where problem was faced" class="form-control" required />
+								<!-- <select type="text" name="police_station" placeholder="police station" class="form-control"> -->
+									<!-- <option value="lorem">lorem</option>
+									<option value="lorem">lorem</option>
+									<option value="lorem">lorem</option>
+									<option value="lorem">lorem</option>
+								</select>	<br> -->
+								</label>
+
+								<label for="">Add descritption of your problem:</label>
+								<textarea class="form-control" name="descritption"  rows="8" cols="15" required ></textarea>
+
+								<!-- <label for="audiocheck">Audio:&nbsp;<input id="audiocheck" type="checkbox" name="audiocheck"></label><br>
+								<input type="file" accept="audio/x-waw" name="audio" placeholder="Add an audio" class="form-control hide">
+
+								<label for="videocheck">Video:&nbsp;<input id="videocheck" type="checkbox" name="videocheck"></label><br>
+								<input type="file" accept="video/x-msvideo" name="video" placeholder="Add an video" class="form-control hide"> -->
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button form="helpform" type="submit" name="submit" value="get_help_form" class="btn btn-primary">Submit Problem</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ends -->
+			<!-- pledge modal -->
+			<div class="modal" id="pledgemodal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Take Pledge Now!</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p class="desc">Want to contribute towards road safety? <br>Take pledge to spread awareness about road safety for your family, friends and loved ones.</p>
+
+							<center><h3><b>To Take Pledge:</b> <a href="/account/login/google-oauth2/?next=/pledge-taken/" >
+								<img src="/static/gsl/img/googlesignin.png"  style="width:170px; height:auto "></a></h3></center>
+
+						</div>
+						<div class="modal-footer">
+							<h3 style="color:green;display:inline-block">Next time you see a victim, do not hesitate to help.</h3>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ends -->
+			<!-- notifcation -->
+			<div class="modal" id="notificationmodal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+
+						<div class="modal-body" style="text-align:center;">
+							
+								<img src="/static/gsl/img/checked/checked.png"  style="width:100px; height:auto ">
+							
+								<h3></h3>
+						</div>
+						<div class="modal-footer">
+
+							<button type="button" class="float-right button button--isi button--text-thick button--text-upper button--size-s" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ends -->
+
+			<!-- mustVideoModal modal -->
+			<div class="modal" id="mustVideoModal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document" style="width:95%;">
+					<div class="modal-content" style="width:inherit;">
+						<div class="modal-header">
+							<h5 class="modal-title">Must Watch Tutorials</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<iframe  class="v1 framer" src="https://www.youtube.com/embed/FVN2zkjaL6Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe class="v2 framer"  src="https://www.youtube.com/embed/QUemzqTXnB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				      <iframe class="v3 framer" src="https://www.youtube.com/embed/o4TTCvHeEKM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe class="v4 framer" src="https://www.youtube.com/embed/_Q0PNJkD9cs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+						</div>
+						<div class="modal-footer">
+
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ends -->
+
+
+		<script type="text/javascript" src="/static/gsl/js/jquery-ui.min.js"></script>
+
+    <!-- notifcation declarations js -->
+      <script type="text/javascript">
+        (function($) {
+
+          // role=application on body required for screenreaders to correctly interpret aria attributes
+          if( !$(document.body).is('[role]') ){
+            $(document.body).attr('role','application');
+          }
+
+          var increments = 0;
+          $.widget("ui.notification", {
+            options: {
+              notificationClass: "ui-widget-content",
+              offset: 10,
+              duration: 2000,
+              show: {
+                effect: 'fade',
+                options: {},
+                speed: 250,
+                callback: function(){}
+              },
+              hide: {
+                effect: 'fade',
+                options: {},
+                speed: 250,
+                callback: function(){}
+              },
+              fancyHide: true,
+              sticky: false,
+              stack: "below"
+            },
+            content: {
+              title: "Notification",
+              content: function() {
+                return $(this).attr("title");
+              },
+              template: "<h4>${Title}</h4><p>${Content}</p>",
+            },
+            _init: function(){
+              // container for notifications
+              this.notifications = [];
+
+              // notification dummy
+              this.notification = $("<div></div>")
+              .attr("role", "notification")
+              .attr("aria-hidden", "true")
+              .addClass("ui-notification ui-widget ui-corner-all")
+              .hide();
+
+              if (this.options.stack == "below") {
+                this.notification.css('marginBottom', this.options.offset);
+              } else {
+                this.notification.css('marginTop', this.options.offset);
+              }
+
+              // notification close button dummy
+              this.notificationClose = $("<a/>")
+              .attr("href", "#")
+              .attr("role", "button")
+              .addClass("ui-notification-close ui-corner-all")
+              .hover(function(){
+                $(this).addClass("ui-state-hover");
+              }, function(){
+                $(this).removeClass("ui-state-hover");
+              })
+              .append(
+              $("<span></span>")
+              .addClass("ui-icon ui-icon-closethick")
+              .text("close")
+              );
+
+              // notification content dummy
+              this.notificationContent = $("<div></div>")
+              .addClass("ui-notification-content");
+            },
+
+            enable: function() {
+              this.options.disabled = false;
+            },
+
+            disable: function() {
+              this.options.disabled = true;
+            },
+
+            widget: function(index) {
+              return index ? this.notifications[index] : this.notifications;
+            },
+
+            index: function() {
+              return increments;
+            },
+
+            create: function(content, options) {
+              var self = this;
+
+              // get defaults
+              content = $.extend({}, this.content, content);
+
+              // override options if necessary
+              options = $.extend({}, this.options, options);
+
+              if (options.disabled) {
+                return;
+              }
+
+              // create a new notification instance
+              this.notifications.push(new $.ui.notification.instance(this)._create(content, $.extend({}, this.options, options)));
+            }
+          });
+
+          // instance constructor
+          $.extend($.ui.notification, {
+            instance: function(widget){
+              this.parent = widget;
+            }
+          });
+          // notification instance
+          $.extend($.ui.notification.instance.prototype, {
+            _create: function(content, options){
+              this.options = options;
+
+              // render content template
+              var content = content.template
+              .replace("${Title}", content.title)
+              .replace("${Content}", content.content);
+
+              // create notification element
+              this.element = this.parent.notification.clone(true).attr("id", "ui-notification-"+increments++)
+              // append the content
+              .append(this.parent.notificationContent.clone().html(content))
+              // add custom class
+              .addClass(options.notificationClass);
+
+              if (options.stack == "below") {
+                this.element.appendTo(this.parent.element);
+              } else {
+                this.element.prependTo(this.parent.element);
+              }
+
+              // if sticky, add close button
+              var self = this;
+              if (options.sticky) {
+                this.parent.notificationClose
+                .clone(true)
+                .click(function(event){
+                  self.hide();
+                  return false;
+                })
+                .prependTo(this.element);
+              } else {
+                // otherwise set timeout to close it automatically
+                setTimeout(function(){self.hide();}, self.options.duration);
+              }
+
+              // let's show the notifiction
+              this.show();
+
+              // return instance
+              return this;
+            },
+            show: function(){
+              var anim = this.options.show;
+              this.element
+              .attr("aria-hidden", "false")
+              .show(
+              anim.effect,
+              anim.options,
+              anim.speed,
+              anim.callback
+              );
+            },
+            hide: function(){
+              var self = this,
+              anim = this.options.hide,
+              wrap = $("<div></div>")
+              .height(this.element.outerHeight(true));
+
+              if (this.options.fancyHide) {
+                this.element.wrap(wrap);
+              }
+              this.element.hide(
+              anim.effect,
+              anim.options,
+              anim.speed,
+              function(){
+                if (self.options.fancyHide) {
+                  $(this).parent().animate({ height: 0},
+                  250,
+                  function(){
+                    $(this).remove();
+                  }
+                  );
+                } else {
+                  $(this).remove();
+                }
+                if (anim.callback) {
+                  anim.callback();
+                }
+              }
+              );
+            }
+
+          });
+
+        })( jQuery );
+      </script>
+    <!--ends-->
+    <!-- notifcation creater js -->
+      <script type="text/javascript">
+        $(function(){
+          $(".ui-notification-container").notification();
+
+          $("button.sticky").click(function(){
+
+            $(".ui-notification-container").notification("create", {
+              title: "Hello world!",
+              content: "I am a sticky notification"
+            },
+            {
+              sticky: true
+            });
+          });
+          $("button.custom-anim").click(function(){
+
+            $(".ui-notification-container").notification("create", {
+              title: "Hello world!",
+              content: "I am a sticky notification"
+            },
+            {
+              show: {
+                effect: 'bounce',
+                options: {},
+                speed: 250,
+                callback: function(){}
+              },
+              hide: {
+                effect: 'clip',
+                options: {},
+                speed: 250,
+                callback: function(){}
+              }
+            });
+          });
+          $("button.error").click(function(){
+            $(".ui-notification-container").notification("create", {
+              title: "Error",
+              content: "This is an error notification"
+            }, { sticky: true, notificationClass: "ui-state-error" });
+          });
+        });
+      </script>
+    <!--ends-->
+		<!-- modal open close generic jquery -->
+
+
+		<script type="text/javascript">
+
+			$('button.navbar-toggle').click(function(){
+
+				$('#navbar-collapse-main').toggleClass('show');
+			});
+
+
+				$('[data-toggle="modal"]').on('click',function(){
+				 $($(this).data('target')).fadeIn();
+				});
+
+				$('.modal button[data-dismiss="modal"]').on('click',()=>{
+				 $('.modal').fadeOut();
+				});
+		</script>
+		<!-- ends -->
+		<!-- add your story jquery -->
+		<script type="text/javascript">
+		 $('input[id="audiocheck"]').on('change',()=>{
+			 $('input[name="audio"]').toggleClass('hide');
+			 $('input[name="audio"]').prop('required',!$('input[name="audio"]').prop('required'));
+		 });
+		 $('input[id="videocheck"]').on('change',()=>{
+			 $('input[name="video"]').toggleClass('hide');
+			 $('input[name="video"]').prop('required',!$('input[name="video"]').prop('required'));
+		 });
+		</script>
+		<!-- ends-->
+		<!-- keydonw -->
+		<script type="text/javascript">
+			//setInterval(()=>{$('.fa-star').toggleClass('gold');},1000);
+			$(document).on('load',()=>{
+				document.addEventListener("keydown", function(event) {
+  				if(event.keyCode == 27 ){
+						$('.modal').fadeOut();
+					}
+
+				});
+			});
+		</script>
+		<!-- ends -->
+		<!-- help modal -->
+		<script type="text/javascript">
+
+			$('#helpform').submit(()=>{
+				$('#ajaxContainer').show();
+			});
+			$('#story_submit').submit(()=>{
+				$('#ajaxContainer').show();
+			});
+
+		</script>
+		<!-- ends -->
+		<!-- ajax loader script -->
+    <script type="text/javascript">
+      $(document).ajaxStart(function () {
+      $('#ajaxContainer').show();
+      });
+      $(document).ajaxComplete(function () {
+        $('#ajaxContainer').hide();
+      });
+    </script>
+    <!-- end-->
+
+			<!-- notifiction modal -->
+			
+
+
+
+
+<!-- for forms autocomplete -->
+<script>
+// This sample uses the Autocomplete widget to help the user select a
+// place, then it retrieves the address components associated with that
+// place, and then it populates the form fields with those details.
+// This sample requires the Places library. Include the libraries=places
+// parameter when you first load the API. For example:
+// <script
+// src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+var placeSearch, autocomplete;
+
+var componentForm = {
+ street_number: 'short_name',
+ route: 'long_name',
+ locality: 'long_name',
+ administrative_area_level_1: 'short_name',
+ country: 'long_name',
+ postal_code: 'short_name'
+};
+
+function initAutocomplete() {
+ // Create the autocomplete object, restricting the search predictions to
+ // geographical location types.
+ autocomplete = new google.maps.places.Autocomplete(
+		 document.getElementById('autocomplete'), {types: ['geocode']});
+
+ // Avoid paying for data that you don't need by restricting the set of
+ // place fields that are returned to just the address components.
+ autocomplete.setFields(['address_component']);
+
+ // When the user selects an address from the drop-down, populate the
+ // address fields in the form.
+ autocomplete.addListener('place_changed', fillInAddress);
+}
+
+function fillInAddress() {
+ // Get the place details from the autocomplete object.
+ var place = autocomplete.getPlace();
+
+ for (var component in componentForm) {
+	 document.getElementById(component).value = '';
+	 document.getElementById(component).disabled = false;
+ }
+
+ // Get each component of the address from the place details,
+ // and then fill-in the corresponding field on the form.
+ for (var i = 0; i < place.address_components.length; i++) {
+	 var addressType = place.address_components[i].types[0];
+	 if (componentForm[addressType]) {
+		 var val = place.address_components[i][componentForm[addressType]];
+		 document.getElementById(addressType).value = val;
+	 }
+ }
+}
+
+// Bias the autocomplete object to the user's geographical location,
+// as supplied by the browser's 'navigator.geolocation' object.
+function geolocate() {
+ if (navigator.geolocation) {
+	 navigator.geolocation.getCurrentPosition(function(position) {
+		 var geolocation = {
+			 lat: position.coords.latitude,
+			 lng: position.coords.longitude
+		 };
+		 var circle = new google.maps.Circle(
+				 {center: geolocation, radius: position.coords.accuracy});
+		 autocomplete.setBounds(circle.getBounds());
+	 });
+ }
+}
+	 </script>
+	 <script type="text/javascript">
+	 // fall ceiling
+	   $('*[name="trig"]').click(function(){
+			 var c=$(this).attr('data-target');
+			 if($('.dropdown-container:not(".hide")').length != 0){
+				 if($('.dropdown-container:not(".hide")').hasClass(c)){
+					 $('.dropdown-container.'+c).toggleClass('hide');
+				 }
+				 else{
+
+					 $('.dropdown-container').addClass('hide');
+					 $('.dropdown-container.'+c).toggleClass('hide');
+				 }
+			 }
+			 else{
+
+				 $('.dropdown-container.'+c).toggleClass('hide');
+			 }
+	   })
+	 </script>
+	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb7MK_swojue2f9YZBYBpGReL5FPYXHIg&libraries=places&callback=initAutocomplete"
+			 async defer></script>
+			 <script type="text/javascript">
+			 // hover dropdown
+			  $('a.dropdown-toggler').mouseover(function(){
+			 	 $('ul.dropdown').addClass('hide')
+			 	 $(this).siblings('ul.dropdown').toggleClass('hide')
+			  });
+			  $('ul.dropdown').mouseover(function(){
+			 	 $(this).removeClass('hide')
+			  });
+			  $('ul.dropdown').mouseout(function(){
+			 	 $(this).addClass('hide')
+			  });
+			  $('a.dropdown-toggler').click(function(){
+			 	 $(this).siblings('ul.dropdown').toggleClass('hide')
+			  });
+
+			 </script>
+			
+
+
+
+
+
+		<script src="/static/gsl/js/slider.min.js"></script>
+    <!-- slider initialise -->
+    <script type="text/javascript">
+      $(document).ready($('#slider').rbtSlider({
+        height: '200vh',
+        // displays dots pagination
+        'dots': true,
+        // displayes arrows navigation
+        'arrows': true,
+        // autoplay interval
+        // 3 = 3 seconds
+        'auto': 3,
+
+      }));
+     </script>
+     <!-- ends -->
+
+
+
+
+</body>
+</html>
