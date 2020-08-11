@@ -1,0 +1,146 @@
+/* CSS Document */
+
+/* --- SUBPAGE MODULE --- */
+
+.subpage_module_container {
+	position: relative;
+	width: 241px;
+	margin:0 auto;
+	background: #3F0909;
+}
+
+/*only used in seperate mode*/
+.subpage_module_container .nav_divider {
+	position: relative;
+	height: 0;
+	padding: 0;
+	margin: 0 auto;
+	width: 241px;
+}
+
+.subpage_module_header {
+	position: relative;
+	width: 241px;
+	height: 2px;
+	padding: 0;
+	margin: 0 auto;
+	background: #3F0909;
+}
+ 
+.subpage_module_footer {
+	position: relative;
+	width: 241px;
+	height: 2px;
+	padding: 0;
+	margin: 0 auto;
+	background: #3F0909;
+}
+
+.subpage_module_spacer {
+	background: #3F0909;
+	margin: 0 2px;
+    padding: 1px 0;
+}
+
+.subpage_module_spacer h2 {
+	display: none;
+}
+
+.subpage_module {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+.subpage_module li {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	display: inline;
+}
+
+.subpage_module li a:link, .subpage_module li a:visited  {
+	width: 197px;
+	padding:6px 22px 6px 18px;
+	margin: 0 0px;
+	color: #ffffff;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+}
+
+.subpage_module li a.last {
+	margin-bottom:15px;
+}
+
+.subpage_module li a.first {
+	margin-top:15px;
+}
+
+.subpage_module li a:hover, .subpage_module li a.active {
+	text-decoration: none;
+	color: #FFFFFF;
+	padding:6px 22px 6px 18px;
+	background-color:#BFB12C;
+}
+
+.subpage_module li.parent a:link, .subpage_module li.parent a:visited {
+	width: 197px;
+	padding:6px 22px 6px 18px;
+	margin: 0 0px;
+	color: #ffffff;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.subpage_module li.parent a:hover{
+	color:#ffffff;
+	text-decoration: none;
+	font-weight: normal;
+	background: none;
+}
+
+.subpage_module li.parent a.active{
+	color:#ffffff;
+	text-decoration: none;
+	font-weight: normal;
+	background: none;
+}
+
+.subpage_module li li a:link, .subpage_module li li a:visited  {
+	width: 197px;
+	padding:6px 22px 6px 18px;
+	margin: 0 0px;
+	color: #ffffff;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: right;
+	display: block;
+}
+
+.subpage_module li li a.active {
+	text-decoration: none;
+	color: #BFB12C;
+	padding:6px 22px 6px 18px;
+}
+
+.subpage_module li li a:hover {
+	text-decoration: none;
+	color: #BFB12C;
+	padding:6px 22px 6px 18px;
+}
+
+.subpage_module li ul {
+	padding: 0;
+	margin: 0;
+}
+
+/* --- END SUBPAGE MODULE --- */

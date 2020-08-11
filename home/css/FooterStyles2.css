@@ -1,0 +1,83 @@
+/* CSS Document */
+
+@charset "UTF-8";
+/* CSS Document */
+
+#linksCol1 {
+	position:absolute;
+	left:-20px;
+	top:31px;
+	width:237px;
+	height:104px;
+	z-index:1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	list-style-position: inside;
+	list-style-type: square;
+	line-height: 15pt;
+}
+#linksCol2 {
+	position:absolute;
+	left:280px;
+	top:31px;
+	width:200px;
+	height:109px;
+	z-index:2;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	list-style-position: inside;
+	list-style-type: square;
+	line-height: 15pt;
+}
+#linksCol3 {
+	position:absolute;
+	left:648px;
+	top:31px;
+	width:245px;
+	height:109px;
+	z-index:3;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	list-style-position: inside;
+	list-style-type: square;
+	line-height: 15pt;
+}
+#linksCol4 {
+	position:absolute;
+	left:177px;
+	top:31px;
+	width:99px;
+	height:108px;
+	z-index:4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	list-style-position: inside;
+	list-style-type: square;
+	line-height: 15pt;
+}
+#linksCol5 {
+	position:absolute;
+	left:455px;
+	top:31px;
+	width:229px;
+	height:112px;
+	z-index:5;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	list-style-position: inside;
+	list-style-type: square;
+	line-height: 15pt;
+}
+#titleBar {
+	position:absolute;
+	left:223px;
+	top:2px;
+	width:697px;
+	height:30px;
+	z-index:4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	list-style-position: inside;
+	list-style-type: square;
+	line-height: 15pt;
+}

@@ -1,0 +1,108 @@
+/* CSS Document */
+
+.rotator {
+    position:relative;
+	width: 874px;
+    height: 480px;
+}
+
+        .rotatorWindow {
+            position: absolute;
+            width: 854px;
+            height: 431px;
+            top: 11px;
+            left: 10px;
+            overflow: hidden;
+        }
+
+            .rotatorWindow div { /* do not style the individual divs in the imageWindow */ }
+                .rotatorWindow div img { /* do not style the individual images in the imageWindow */ }
+
+			.rotatorNavigation {
+	            position: absolute;
+	            z-index: 30;
+	            list-style-type: none;
+	
+	            /* style below however you want */
+	            top: 422px;
+	            left: 28px;
+	            height:20px;
+	            padding: 0px;
+	            margin: 0 1px 0 0;
+	        }
+	
+	            /* style below however you want */
+	            .rotatorNavigation li {
+	                width: 20px;
+	                height: 20px;
+	                line-height: 20px;  /* used for vertical centering; set as the same as the 'height' */
+	                text-align: center;
+	    			float: left;
+	                margin: 0px;
+	                padding: 0px;
+	                font-size: 14px;
+	                font-family: Arial,Helvetica,sans-serif;
+	                content: "";
+	                overflow: hidden;
+	                background: #ffffff;
+	                color: #333333;
+	            }
+	    
+	            /* style below however you want */
+	            .rotatorNavigation li.on {
+	                color: #ffffff;
+	                background: url('../images/layouts/rotator_nav.png') repeat-x center top;
+	            }
+    
+    
+        .rotatorDescriptions {
+            position: absolute;
+            overflow: hidden; /* highly recommend that the overflow is hidden to prevent image bleeding on the website */
+            z-index: 20; /* keep this: it sets the position */
+
+            /* style below however you want */
+            width: 874px;
+            height: 18px;
+            top: 462px;
+            left: 0px;
+            padding:0;
+            color: #333333;
+            font-size: 11px;
+            font-family: Arial,Helvetica,sans-serif;
+            text-align: left;
+            overflow: hidden;
+            z-index: 23;
+            
+        }
+        
+        	.rotatorDescriptions p {
+        		margin: 0;
+        	}
+    
+            /* style below however you want */
+            .rotatorDescriptions div {
+                position: relative;
+                height: 100%;  /* keep this as it ensures there is not a flicker on the text */
+                padding: 0; 
+                margin: 0 auto; 
+            }
+    
+        .rotatorAnchor {
+            position: absolute;
+            width: 854px;
+            height: 431px;
+            top: 11px;
+            left: 10px;
+            z-index: 25;
+        }
+    
+        .rotatorOverlay {
+            position: absolute;
+            width: 676px;
+            height: 511px;
+            top: 0;
+            left: 0;
+            z-index: 22;
+            background: url('../images/layouts/rotator_bg.png') no-repeat center top;
+			display:none;
+        }

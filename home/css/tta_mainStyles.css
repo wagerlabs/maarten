@@ -1,0 +1,123 @@
+/* CSS Document */
+
+@charset "UTF-8";
+/* CSS Document */
+
+
+.redTxt {
+	color: #700f0f;
+}
+.end {
+	clear: both;
+}
+#container {
+	width: 860px;
+	height:auto;
+	text-align: left;
+	margin: 0px auto;
+}
+#col1 {
+	float: left;
+	width: 540px;
+	text-align: left;
+	margin: 0px auto;
+}
+#col2 {
+	float: right;
+	width: 260px;
+	text-align: left;
+	margin: 0px auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	text-align: left;
+	line-height: 15pt;
+}
+.bodyDiv {
+	float: left;
+	width: 540px; padding: 10px 10px 0px 0px; 
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	text-align: left;
+	line-height: 15pt;
+	list-style-type: disc;
+}
+.full-bodyDiv {
+	float: left;
+	width: 860px; padding: 10px 10px 0px 0px; 
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	text-align: left;
+	line-height: 15pt;
+	list-style-type: disc;
+}
+.navDiv{
+	float: left;
+	width:250px;
+	text-align: left;
+	margin: 0px auto;
+	background-color: #fefefc;
+	background-image:url("../images/uploads/about_us/tta_navBG.jpg");
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+.imgStyles {
+padding-right: 20px;
+padding-bottom: 20px;
+}
+.imgStylesRt {
+padding-left: 20px;
+padding-bottom: 20px;
+}
+.bodyDiv ul, .bodyDiv ol, .full-bodyDiv ul, .full-bodyDiv ol{
+	list-style-position: outside;
+margin-left: 10px;
+padding-left: 10px;
+text-indent: 0px;
+}
+.navDiv ul, .navDiv ol {
+	list-style-position: outside;
+	padding-left: 25px;
+	padding-top: 15px;
+	margin-top: 0px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	text-align: left;
+	line-height: 14pt;
+	list-style-position: outside;
+	list-style-image: url("../images/uploads/pso_images/arrow2Red.gif");
+	
+}
+
+.box_shadow {
+-moz-box-shadow:    1px 1px 9px 3px #ebebeb;
+  -webkit-box-shadow: 1px 1px 9px 3px #ebebeb;
+  box-shadow:         1px 1px 9px 3px #ebebeb;
+ 
+}
+
+
+
+.hor-zebra {
+	font-size: 8pt;
+	text-align: left;
+	border-collapse: collapse;
+}
+.hor-zebra th {
+	color:#b9b69a;
+	font-size: 12px;
+}
+.hor-zebra td {
+	padding: 0px  1px;
+	color: #000000;
+
+}
+.hor-zebra .odd {
+	background: #f2f2f2;
+}
+.hor-zebra .even {
+	background: #e6e6e6;
+}
+

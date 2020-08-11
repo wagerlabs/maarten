@@ -1,0 +1,65 @@
+/* CSS Document */
+#expandadiv_container, #expandadiv_1, #expandadiv_2 {
+	position: relative;
+	width:100%;
+	margin: 0;
+	height: 148px; /* height of the ExpandADiv */
+	color:#191e25;
+}
+
+	#expandadiv_bg_1 {
+		width:100%;
+		height: 148px; /* height of the ExpandADiv */
+		margin: 0;
+		background: #d0d0d0 url('../images/layouts/ead_bg.jpg') repeat-x center top;
+	}
+	
+		#expandadiv_dropdown_1 {
+			position: relative;
+			width: 1000px;
+			height: 132px;
+			padding:16px 0 0 0;
+			margin: 0 auto;
+			font-family: Arial,Helvetica,sans-serif;
+			font-size: 11px;
+			color: #353535;
+			overflow: hidden;
+		}
+
+		#expandadiv1_column_container {
+			margin: 0 auto;
+		}
+
+			.expandadiv1_column {
+				float: left;
+				margin: 0 35px 0 0;
+				text-align: left;
+				
+			}
+		
+				.expandadiv1_group {
+					margin-bottom: 12px;
+					font-size: 12px;
+					line-height: 14px;
+				}
+		
+				.expandadiv1_group a {
+					color: #353535;
+					text-decoration: none;
+					padding-left: 10px;
+				}
+		
+				.expandadiv1_group a:hover {
+					color: #450a0a;
+					text-decoration: underline;
+				}
+		
+				.expandadiv1_group a.expandadiv1_header {
+					color: #450a0a;
+					font-weight: bold;
+					text-indent: 0px;
+					text-decoration: none;
+					text-transform: uppercase;
+					padding-left: 0;
+					cursor: default;
+				}
